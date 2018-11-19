@@ -11,7 +11,7 @@ using System.Text;
 namespace BlockChainClient.Classes
 {
 	public class BlockChain
-	{ //check
+	{ 
 		/// <summary>
 		/// Добавить новую транзакцию в блок, POST запрос
 		/// </summary>
