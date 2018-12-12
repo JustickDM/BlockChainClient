@@ -27,6 +27,7 @@ namespace BlockChainClient
 
 							var transaction = new Transaction()
 							{
+								Name = Console.ReadLine(),
 								Amount = rnd.Next(1, 1000),
 								Recipient = Guid.NewGuid().ToString().Replace("-", ""),
 								Sender = Guid.NewGuid().ToString().Replace("-", "")
