@@ -1,5 +1,5 @@
-﻿using BlockChainClient.Models;
-using BlockChainClient.Classes;
+﻿using BlockChain.Models;
+using bc = BlockChain.Classes;
 
 using System;
 
@@ -35,7 +35,7 @@ namespace BlockChainClient
 
 							Console.WriteLine(transaction.ToString());
 
-							var result = BlockChain.NewTransaction(transaction);
+							var result = bc.BlockChain.NewTransaction(transaction);
 							if (result.Errors == null)
 							{
 								Console.WriteLine(result.Message);
@@ -51,7 +51,7 @@ namespace BlockChainClient
 						break;
 					case "2":
 						{
-							var result = BlockChain.Mine();
+							var result = bc.BlockChain.Mine();
 							if (result.Errors == null)
 							{
 								Console.WriteLine(result.Block.ToString());
@@ -67,7 +67,7 @@ namespace BlockChainClient
 						break;
 					case "3":
 						{
-							var result = BlockChain.GetFullChain();
+							var result = bc.BlockChain.GetFullChain();
 							if (result.Errors == null)
 							{
 								Console.WriteLine($"Chain length - {result.Chain.Length}");

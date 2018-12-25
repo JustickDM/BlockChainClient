@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace BlockChainClient.Models
+namespace BlockChain.Models
 {
 	/// <summary>
 	/// Цепочка блоков

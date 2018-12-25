@@ -3,7 +3,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace BlockChainClient.Models
+namespace BlockChain.Models
 {
 	/// <summary>
 	/// Блок

@@ -1,4 +1,4 @@
-﻿namespace BlockChainClient.Models
+﻿namespace BlockChain.Models
 {
 	/// <summary>
 	/// Транзакция
