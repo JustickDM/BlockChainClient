@@ -1,4 +1,4 @@
-﻿using BlockChainClient.Models;
+﻿using BlockChain.Models;
 
 using Newtonsoft.Json;
 
@@ -8,9 +8,9 @@ using System.IO;
 using System.Net;
 using System.Text;
 
-namespace BlockChainClient.Classes
+namespace BlockChain.Classes
 {
-	public class BlockChain
+	public static class BlockChain
 	{
 		/// <summary>
 		/// Добавить новую транзакцию в блок, POST запрос

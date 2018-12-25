@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BlockChainClient.Models
+namespace BlockChain.Models
 {
 	/// <summary>
 	/// Результат запроса метода GetFullChain
