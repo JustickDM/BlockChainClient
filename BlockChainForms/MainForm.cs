@@ -46,7 +46,7 @@ namespace BlockChainForms
 				var errors = string.Empty;
 				foreach (var error in result.Errors)
 				{
-					errors += error + "/n";
+					errors += error;
 				}
 				MessageBox.Show(errors, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
@@ -65,7 +65,7 @@ namespace BlockChainForms
 				var errors = string.Empty;
 				foreach (var error in result.Errors)
 				{
-					Console.WriteLine(error);
+					errors += error;
 				}
 				MessageBox.Show(errors, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
@@ -81,7 +81,6 @@ namespace BlockChainForms
 
 				foreach (var block in result.Chain.Blocks)
 				{
-					Console.WriteLine(block.ToString());
 					ChainList.Items.Add(block);
 				}
 			}
@@ -90,7 +89,7 @@ namespace BlockChainForms
 				var errors = string.Empty;
 				foreach (var error in result.Errors)
 				{
-					Console.WriteLine(error);
+					errors += error;
 				}
 				MessageBox.Show(errors, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			}
